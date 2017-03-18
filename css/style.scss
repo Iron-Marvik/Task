@@ -1,0 +1,68 @@
+@import '_fonts';
+/*-------Font Vars---------*/
+$menu-head-font:16px Roboto-Regular 700;
+$menu-list-font:14px Roboto-Regular;
+/*-------End Font Vars---------*/
+
+/*--------MENU----------*/
+.nav-list{
+  width:255px;
+  height:100%;
+  background-color: rgb(45, 50, 62);
+  position: absolute;
+  display: block;
+  float:left;
+  color: rgb(189, 190, 194);
+}
+
+.nav-header{
+  font:$menu-head-font;
+  font-weight: 500;
+  line-height: 66px;
+  background-color: rgb(55, 60, 71);
+}
+
+.nav-header-text{
+  display: inline-block;
+  width: 50%;
+  padding-left: 25px;
+  border-bottom: 1px solid rgb(41, 45, 56);
+}
+
+.mdi-backburger{
+  @extend .nav-header-text;
+  text-align: right;
+  padding-right: 23px;
+}
+
+
+.nav li a{
+  color: rgb(189, 190, 194);
+  padding:0;
+  line-height: 48px;
+  font:$menu-list-font;
+  .mdi{
+    display: inline-block;
+    vertical-align: baseline;
+    padding-right: 25px;
+    padding-left: 25px;
+    line-height: 48px;
+  }
+}
+
+.nav li a:hover{
+  background-color: rgb(41, 45, 56);
+}
+
+.nav li a:focus{
+  background-color: rgb(41, 45, 56);
+}
+
+/*--------END MENU----------*/
+
+.header{
+  width: 100%;
+  display: block;
+  position: fixed;
+  float: left;
+}
