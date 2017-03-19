@@ -83,6 +83,7 @@ $menu-list-font:14px Roboto-Regular;
   text-indent: 15px;
   width: 318px;
   height: 40px;
+  padding-right: 10%;
 }
 
 .glyphicon-search{
@@ -96,17 +97,24 @@ $menu-list-font:14px Roboto-Regular;
 
 .bell{
   @extend .search;
-  width:50px;
-  margin-left: 30px;
+  width:53px;
+  padding-left: 28px;
   color: rgb(94, 106, 128);
+}
+
+.bell-mdi{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  left:0;
   z-index: 0;
 }
 
 .bell-mdi-mark{
   @extend .search;
-  position: relative;
+  position: absolute;
   top:20px;
-  left:24px;
+  left:38px;
   display: block;
   width: 14px;
   height: 13px;
@@ -117,7 +125,7 @@ $menu-list-font:14px Roboto-Regular;
 
 .bell-mdi-count{
   @extend .search;
-  position: relative;
+  position: absolute;
   left:4px;
   display: block;
   background-color: rgb(226, 113, 92);
